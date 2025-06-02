@@ -19,7 +19,7 @@ class RsaKeygenTool(Tool):
             blob=private_key_pem,
             meta={
                 "mime_type": "application/x-pem-file",
-                "filename": "RSA_PKCS8_2048_private_key.pem",
+                "filename": "private_key.pem",
             },
         )
 
@@ -27,7 +27,7 @@ class RsaKeygenTool(Tool):
             blob=public_key_pem,
             meta={
                 "mime_type": "application/x-pem-file",
-                "filename": "RSA_PKCS8_2048_private_key.pem",
+                "filename": "public_key.pem",
             },
         )
 

@@ -12,13 +12,27 @@ This Dify plugin `crypto` provides tools for Encryption, Decryption, Hashing wit
 
 ## Tools and Usage
 
-- `sha256sum` Tool
-  - Input: Binary file
-  - Output: SHA256 hash of the input binary file
+### File Hashing with SHA256
+  - Tool: `sha256sum`
+  - Input: 
+    - Binary file
+  - Output: 
+    - SHA256 hash of the input binary file
 
-- `md5sum` Tool
-  - Input: Binary file
+### File Hashing with MD5
+  - Tool: `md5sum`
+  - Input: 
+    - Binary file
   - Output: MD5 hash of the input binary file
+
+### RSA KeyPair Generation
+  - Tool: `rsa_keygen` 
+  - Input: 
+    - Key size in bits, default: 2048, allowed values: 1024, 2048, 3072, 4096
+  - Output: 
+    - RSA public and private keys in PEM format (PKCS8)
+      - public key: `public_key.pem`
+      - private key: `private_key.pem`
 
 ## Changelog
 
