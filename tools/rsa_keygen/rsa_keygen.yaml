@@ -21,7 +21,7 @@ parameters:
       en_US: "RSA key size in bits (default: 2048)"
       zh_Hans: "RSA 密钥大小（位），默认值为 2048"
     llm_description: "RSA key size in bits (default: 2048)"
-    form: llm
+    form: form
 extra:
   python:
     source: tools/rsa_keygen/rsa_keygen.py
