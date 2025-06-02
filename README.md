@@ -6,9 +6,19 @@
 
 **Dify Marketplace:** https://marketplace.dify.ai/plugins/bowenliang123/crypto
 
-### Description
+## Description
 
-This Dify plugin `crypto` provides tools for  Encryption, Decryption, Singing with [Cryptography](https://cryptography.io/).
+This Dify plugin `crypto` provides tools for Encryption, Decryption, Hashing with [Cryptography](https://cryptography.io/).
+
+## Tools and Usage
+
+- `sha256sum` Tool
+  - Input: Binary file
+  - Output: SHA256 hash of the input binary file
+
+- `md5sum` Tool
+  - Input: Binary file
+  - Output: MD5 hash of the input binary file
 
 ## Changelog
 
