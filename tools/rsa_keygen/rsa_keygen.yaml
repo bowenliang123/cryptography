@@ -1,0 +1,27 @@
+identity:
+  name: rsa_keygen
+  author: bowenliang123
+  label:
+    en_US: RSA Key Pair Generation
+    zh_Hans: RSA 密钥对生成
+description:
+  human:
+    en_US: Generate RSA Key Pair
+    zh_Hans: 生成RSA密钥对
+  llm: Generate RSA Key Pair
+parameters:
+  - name: key_size
+    type: number
+    required: true
+    default: 2048
+    label:
+      en_US: Key Size
+      zh_Hans: 输入文件
+    human_description:
+      en_US: "RSA key size in bits (default: 2048)"
+      zh_Hans: "RSA 密钥大小（位），默认值为 2048"
+    llm_description: "RSA key size in bits (default: 2048)"
+    form: llm
+extra:
+  python:
+    source: tools/rsa_keygen/rsa_keygen.py

@@ -11,6 +11,7 @@ identity:
 tools:
   - tools/sha256sum/sha256sum.yaml
   - tools/md5sum/md5sum.yaml
+  - tools/rsa_keygen/rsa_keygen.yaml
 extra:
   python:
     source: provider/crypto.py

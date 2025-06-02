@@ -23,4 +23,4 @@ parameters:
     form: llm
 extra:
   python:
-    source: tools/md5sum/md5sum_tool.py
+    source: tools/md5sum/md5sum.py
