@@ -1,0 +1,17 @@
+identity:
+  author: bowenliang123
+  name: crypto
+  label:
+    en_US: crypto
+    zh_Hans: crypto
+    pt_BR: crypto
+  description:
+    en_US: A tool for encryption, decryption and signing
+    zh_Hans: A tool for encryption, decryption and signing
+    pt_BR: A tool for encryption, decryption and signing
+  icon: icon.svg
+tools:
+  - tools/crypto.yaml
+extra:
+  python:
+    source: provider/crypto.py
