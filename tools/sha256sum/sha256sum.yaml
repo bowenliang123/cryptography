@@ -2,7 +2,7 @@ identity:
   name: sha256sum
   author: bowenliang123
   label:
-    en_US: sha256sum File Hashing
+    en_US: sha256sum File Hash
     zh_Hans: sha256sum 文件哈希
 description:
   human:

@@ -2,7 +2,7 @@ identity:
   name: md5sum
   author: bowenliang123
   label:
-    en_US: md5sum File Hashing
+    en_US: md5sum File Hash
     zh_Hans: md5sum 文件哈希
 description:
   human:
