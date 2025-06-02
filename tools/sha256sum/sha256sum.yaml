@@ -8,7 +8,7 @@ description:
   human:
     en_US: Generate SHA-256 hash of file
     zh_Hans: 生成文件的 SHA-256 哈希值
-  llm: A tool for encryption, decryption and signing
+  llm: Generate SHA-256 hash of file
 parameters:
   - name: input_file
     type: file

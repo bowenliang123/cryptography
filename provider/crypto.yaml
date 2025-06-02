@@ -9,7 +9,8 @@ identity:
     zh_Hans: 加解密签名工具
   icon: icon.svg
 tools:
-  - tools/sha256sum/sha256sum_tool.yaml
+  - tools/sha256sum/sha256sum.yaml
+  - tools/md5sum/md5sum.yaml
 extra:
   python:
     source: provider/crypto.py
