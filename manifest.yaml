@@ -7,7 +7,7 @@ label:
   zh_Hans: Cryptography 加解密签名
 description:
   en_US: Encryption, decryption and hashing, supporting RSA, SHA256, MD5 etc.
-  zh_Hans: 加密、解密、签名，支持RSA、SHA256、MD5等多种算法
+  zh_Hans: 加密、解密、签名，支持RSA、SHA256、MD5等算法
 icon: icon.svg
 resource:
   memory: 536870912
