@@ -2,7 +2,7 @@
 
 ## Introduction
 
-When using the `crypto` Dify plugin, we are committed to protecting your privacy. This Privacy Policy outlines our practices regarding the collection, use, and storage of your data.
+When using the `bowenliang123/cryptography` Dify plugin, we are committed to protecting your privacy. This Privacy Policy outlines our practices regarding the collection, use, and storage of your data.
 
 ## Data Collection
 

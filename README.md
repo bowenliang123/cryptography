@@ -1,4 +1,4 @@
-# Crypto - Encryption, Decryption, Singing with Cryptography
+# Cryptography - Encryption, Decryption, Hashing for Files and Text
 
 **Author:** [bowenliang123](https://github.com/bowenliang123)
 
