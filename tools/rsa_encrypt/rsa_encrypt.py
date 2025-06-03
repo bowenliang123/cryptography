@@ -19,14 +19,14 @@ class RsaEncryptTool(Tool):
             raise ValueError("Invalid RSA public key string, which should be starts with '-----BEGIN PUBLIC KEY-----'")
 
         try:
-            public_key = serialization.load_pem_public_key(public_key_text.encode())
+            public_key = serialization.load_pem_public_key(public_key_text.encode("utf-8"))
         except ValueError as e:
             raise ValueError("Failed to load public key from PEM format") from e
 
         try:
             encrypted_bytes = self.encrypt_data(public_key=public_key, plaintext=plaintext.encode())
-            base64_str = base64.b64encode(encrypted_bytes).decode('utf-8')
-            yield self.create_text_message(base64_str)
+            result_base64_str = base64.b64encode(encrypted_bytes).decode("utf-8")
+            yield self.create_text_message(result_base64_str)
         except ValueError as e:
             raise ValueError(
                 "Failed to encrypt data, as its length is too large for the provided RSA public key") from e
