@@ -8,7 +8,7 @@
 
 ## Description
 
-This Dify plugin `crypto` provides tools for Encryption, Decryption, Hashing with [Cryptography](https://cryptography.io/).
+This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashing with [Cryptography](https://cryptography.io/) library.
 
 ## Tools and Usage
 
