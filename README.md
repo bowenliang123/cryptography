@@ -34,10 +34,27 @@ This Dify plugin `crypto` provides tools for Encryption, Decryption, Hashing wit
       - public key: `public_key.pem`
       - private key: `private_key.pem`
 
+### RSA Encryption
+- Tool: `rsa_encrypt`
+- Input:
+    - plain text
+    - RSA public key text (eg. copied from `public_key.pem`)
+- Output:
+  - text: encrypted ciphertext in Base64 format
+
+### RSA Decryption
+- Tool: `rsa_decrypt`
+- Input:
+    - encrypted ciphertext in Base64 format
+    - RSA private key text (eg. copied from `private_key.pem`)
+- Output:
+    - plain text
+
 ## Changelog
 
 - 0.0.1:
   - Introduce `sha256sum` and `md5sum` tools for hashing the input binary file
+  - Introduce `rsa_encrypt` and `rsa_decrypt` tools for RSA encryption and decryption of Base64 format ciphertext
 
 ## License
 
