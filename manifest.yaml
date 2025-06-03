@@ -3,14 +3,14 @@ type: plugin
 author: bowenliang123
 name: cryptography
 label:
-  en_US: cryptography
-  zh_Hans: cryptography
+  en_US: Cryptography
+  zh_Hans: Cryptography 加解密签名
 description:
   en_US: Encryption, decryption and hashing, supporting RSA, SHA256, MD5 etc.
-  zh_Hans: 加解密签名工具，支持RSA、SHA256、MD5等多种算法
+  zh_Hans: 加密、解密、签名，支持RSA、SHA256、MD5等多种算法
 icon: icon.svg
 resource:
-  memory: 268435456
+  memory: 536870912
   permission:
     tool:
       enabled: true
