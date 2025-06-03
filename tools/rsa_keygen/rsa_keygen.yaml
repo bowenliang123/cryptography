@@ -16,7 +16,7 @@ parameters:
     default: 2048
     label:
       en_US: Key Size
-      zh_Hans: 输入文件
+      zh_Hans: 秘钥长度
     human_description:
       en_US: "RSA key size in bits (default: 2048)"
       zh_Hans: "RSA 密钥大小（位），默认值为 2048"
