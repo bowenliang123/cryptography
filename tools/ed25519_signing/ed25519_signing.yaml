@@ -2,13 +2,13 @@ identity:
   name: ed25519_signing
   author: bowenliang123
   label:
-    en_US: Ed25519 Encrypt
+    en_US: Ed25519 Signing
     zh_Hans: Ed25519 签名
 description:
   human:
-    en_US: Ed25519 Encrypt
+    en_US: Ed25519 Signing
     zh_Hans: Ed25519 签名
-  llm: Ed25519 Encrypt
+  llm: Ed25519 Signing
 parameters:
   - name: plaintext
     type: string

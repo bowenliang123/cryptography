@@ -5,7 +5,7 @@ from dify_plugin.errors.tool import ToolProviderCredentialValidationError
 
 from tools.ed25519_keygen.ed25519_keygen import Ed25519KeygenTool
 from tools.ed25519_signing.ed25519_signing import Ed25519SigningTool
-from tools.ed25519_verification.ed25519_signing import Ed25519VerificationTool
+from tools.ed25519_verification.ed25519_verification import Ed25519VerificationTool
 from tools.md5sum.md5sum import Md5SumTool
 from tools.rsa_decrypt.rsa_decrypt import RsaDecryptTool
 from tools.rsa_encrypt.rsa_encrypt import RsaEncryptTool
