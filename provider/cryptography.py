@@ -3,6 +3,7 @@ from typing import Any
 from dify_plugin import ToolProvider
 from dify_plugin.errors.tool import ToolProviderCredentialValidationError
 
+from tools.aes_encrypt.aes_encrypt import AesEncryptTool
 from tools.ed25519_keygen.ed25519_keygen import Ed25519KeygenTool
 from tools.ed25519_sign.ed25519_sign import Ed25519SigningTool
 from tools.ed25519_verify.ed25519_verify import Ed25519VerificationTool
@@ -31,5 +32,8 @@ class CryptoProvider(ToolProvider):
             RsaKeygenTool.from_credentials({})
             RsaEncryptTool.from_credentials({})
             RsaDecryptTool.from_credentials({})
+
+            # AES
+            AesEncryptTool.from_credentials({})
         except Exception as e:
             raise ToolProviderCredentialValidationError(str(e))
