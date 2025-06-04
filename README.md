@@ -64,13 +64,13 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
     - plain text
     - Ed25519 private key text (eg. copied from `private_key.pem`)
 - Output:
-  - signature: Ed25519 signature in Base64 format
+  - signature: Ed25519 signature text in Base64 format
 
 ### Ed25519 Verification
 - Tool: `ed25519_verify`
 - Input:
     - plain text
-    - Ed25519 Signature in Base64 format
+    - Ed25519 signature text in Base64 format
     - Ed25519 public key text (eg. copied from `public_key.pem`)
 - Output:
     - `True` if the signature is valid, `False` otherwise
