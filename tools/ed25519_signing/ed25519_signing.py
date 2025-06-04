@@ -12,19 +12,19 @@ class Ed25519SigningTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         plaintext: str = tool_parameters.get("plaintext")
         if not plaintext or not isinstance(plaintext, str):
-            raise ValueError("Not a valid file for input input_file")
+            raise ValueError("Not an valid input for plaintext")
 
         private_key_text: str = tool_parameters.get("private_key_text")
         if not private_key_text and not "PRIVATE KEY" in private_key_text:
             raise ValueError(
-                "Invalid RSA private key string, which should be starts with '-----BEGIN PRIVATE KEY-----'")
+                "Invalid Ed25519 private key string, which should be starts with '-----BEGIN PRIVATE KEY-----'")
 
         try:
             private_key: Ed25519PrivateKey = serialization.load_pem_private_key(
                 data=private_key_text.encode("utf-8"),
                 password=None)
         except ValueError as e:
-            raise ValueError("Failed to load private key from PEM format") from e
+            raise ValueError("Failed to load Ed25519 private key from PEM format") from e
 
         try:
             signature_bytes = self.sign_data(private_key=private_key, data=plaintext.encode())

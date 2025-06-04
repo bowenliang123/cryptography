@@ -25,12 +25,12 @@ parameters:
     type: string
     required: true
     label:
-      en_US: Private Key Content
+      en_US: Private Key Text
       zh_Hans: 私钥文本
     human_description:
-      en_US: "Starts with '-----BEGIN Ed25519 PUBLIC KEY-----'"
-      zh_Hans: "以 '-----BEGIN Ed25519 PUBLIC KEY-----' 开头"
-    llm_description: "Public Key File"
+      en_US: "Starts with '-----BEGIN PUBLIC KEY-----'"
+      zh_Hans: "以 '-----BEGIN PUBLIC KEY-----' 开头"
+    llm_description: "Public Key Content"
     form: llm
 extra:
   python:

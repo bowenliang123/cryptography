@@ -28,8 +28,8 @@ parameters:
       en_US: Signature
       zh_Hans: 签名
     human_description:
-      en_US: "Signature"
-      zh_Hans: 签名
+      en_US: Base64-encoded signature text
+      zh_Hans: Base64 编码的签名文本
     llm_description: "Signature"
     form: llm
   - name: public_key_text
