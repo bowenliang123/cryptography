@@ -1,5 +1,5 @@
 identity:
-  name: ed25519_signing
+  name: ed25519_sign
   author: bowenliang123
   label:
     en_US: Ed25519 Signing
@@ -34,4 +34,4 @@ parameters:
     form: llm
 extra:
   python:
-    source: tools/ed25519_signing/ed25519_signing.py
+    source: tools/ed25519_sign/ed25519_sign.py

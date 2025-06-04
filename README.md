@@ -59,7 +59,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
       - private key: `private_key.pem`
 
 ### Ed25519 Signing
-- Tool: `ed25519_signing`
+- Tool: `ed25519_sign`
 - Input:
     - plain text
     - Ed25519 private key text (eg. copied from `private_key.pem`)
@@ -67,7 +67,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
   - signature: Ed25519 signature in Base64 format
 
 ### Ed25519 Verification
-- Tool: `ed25519_verification`
+- Tool: `ed25519_verify`
 - Input:
     - plain text
     - Ed25519 Signature in Base64 format
@@ -78,7 +78,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 ## Changelog
 
 - 0.1.0:
-  - Introduce tools to support Ed25519 signing, varification, keypair generation, including `ed25519_keygen`, `ed25519_signing` and `ed25519_verification`
+  - Introduce tools to support Ed25519 signing, varification, keypair generation, including `ed25519_keygen`, `ed25519_sign` and `ed25519_verify`
 
 - 0.0.1:
   - Introduce `sha256sum` and `md5sum` tools for hashing the input binary file

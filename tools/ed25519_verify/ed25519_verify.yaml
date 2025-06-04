@@ -1,5 +1,5 @@
 identity:
-  name: ed25519_verification
+  name: ed25519_verify
   author: bowenliang123
   label:
     en_US: Ed25519 Verification
@@ -45,4 +45,4 @@ parameters:
     form: llm
 extra:
   python:
-    source: tools/ed25519_verification/ed25519_verification.py
+    source: tools/ed25519_verify/ed25519_verify.py
