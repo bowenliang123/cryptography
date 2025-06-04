@@ -16,8 +16,14 @@ parameters:
     default: "2048"
     options:
       - value: "2048"
+        label:
+          en_US: "2048"
       - value: "3072"
+        label:
+          en_US: "3072"
       - value: "4096"
+        label:
+          en_US: "4096"
     label:
       en_US: Key Size
       zh_Hans: 秘钥长度
