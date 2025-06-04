@@ -3,9 +3,8 @@ import os
 from collections.abc import Generator
 from typing import Any
 
-from cryptography.hazmat.primitives import padding
-from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives import padding
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
@@ -20,18 +19,18 @@ class AesEncryptTool(Tool):
         if not key_text or not isinstance(key_text, str):
             raise ValueError("Encryption key is required")
         key_bytes: bytes = base64.b64decode(key_text.encode())
-        if len(key_bytes) not in [128, 192, 256]:
-            raise ValueError("Invalid decoded AES key length, which must be either 128, 192, or 256 bits")
+        if len(key_bytes) not in [16, 24, 32]:
+            raise ValueError(f"Invalid decoded AES key length {len(key_bytes)}, which must be either 16, 24, or 32")
 
         try:
-            salt_bytes, encrypted_bytes = self.encrypt_data(key=key_bytes, data=plaintext.encode())
-            result_base64_str = base64.urlsafe_b64encode(salt_bytes + encrypted_bytes).decode()
+            encrypted_bytes = self.encrypt_data(key=key_bytes, data=plaintext.encode())
+            result_base64_str = base64.urlsafe_b64encode(encrypted_bytes).decode()
             yield self.create_text_message(result_base64_str)
         except ValueError as e:
             raise ValueError("Failed to encrypt data") from e
 
     @staticmethod
-    def encrypt_data(key: bytes, data: bytes) -> (bytes, bytes):
+    def encrypt_data(key: bytes, data: bytes) -> bytes:
         iv = os.urandom(16)
         cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
         encryptor = cipher.encryptor()
@@ -40,4 +39,4 @@ class AesEncryptTool(Tool):
         padded_data = padder.update(data) + padder.finalize()
 
         ciphertext = encryptor.update(padded_data) + encryptor.finalize()
-        return iv, ciphertext
+        return iv + ciphertext
