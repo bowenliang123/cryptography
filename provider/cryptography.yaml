@@ -5,8 +5,8 @@ identity:
     en_US: Cryptography
     zh_Hans: Cryptography 加解密签名
   description:
-    en_US: Encryption, decryption and hashing, supporting RSA, Ed25519, SHA256, MD5 etc.
-    zh_Hans: 加密、解密、签名，支持RSA、Ed25519、SHA256、MD5等算法
+    en_US: Encryption, decryption, signing and keypair generation, supporting RSA, Ed25519, SHA256, MD5 etc.
+    zh_Hans: 加密、解密、签名、密钥生成，支持RSA、Ed25519、SHA256、MD5等算法
   icon: icon.svg
 tools:
   - tools/sha256sum/sha256sum.yaml
