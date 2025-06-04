@@ -6,8 +6,8 @@ identity:
     zh_Hans: Ed25519 签名验证
 description:
   human:
-    en_US: Ed25519 Verification
-    zh_Hans: Ed25519 签名验证
+    en_US: Using Ed25519 algorithm and public key, verify signature for the input plaintext
+    zh_Hans: 使用 Ed25519 算法及公钥，验证签名对原文的正确性
   llm: Ed25519 Verification
 parameters:
   - name: plaintext

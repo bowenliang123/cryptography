@@ -2,7 +2,7 @@ identity:
   name: rsa_decrypt
   author: bowenliang123
   label:
-    en_US: RSA Decrypt
+    en_US: RSA Decryption
     zh_Hans: RSA 解密
 description:
   human:

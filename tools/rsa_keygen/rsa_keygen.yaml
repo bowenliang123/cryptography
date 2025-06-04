@@ -2,12 +2,12 @@ identity:
   name: rsa_keygen
   author: bowenliang123
   label:
-    en_US: RSA Key Pair Generation
+    en_US: RSA Keypair Generation
     zh_Hans: RSA 密钥对生成
 description:
   human:
-    en_US: Generate RSA Key Pair
-    zh_Hans: 生成RSA密钥对
+    en_US: Generate RSA Key Pair, including public and private keys in PKCS#8 format
+    zh_Hans: 生成 RSA 的公钥及密钥，分别输出为 PKCS#8 格式 pem文件
   llm: Generate RSA Key Pair
 parameters:
   - name: key_size

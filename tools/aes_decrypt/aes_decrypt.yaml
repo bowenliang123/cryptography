@@ -2,12 +2,12 @@ identity:
   name: aes_decrypt
   author: bowenliang123
   label:
-    en_US: AES Decrypt
+    en_US: AES Decryption
     zh_Hans: AES 解密
 description:
   human:
-    en_US: AES Decrypt
-    zh_Hans: AES 解密
+    en_US: Use AES symmetric encryption algorithm to decrypt Base64-encoded ciphertext and output the plaintext
+    zh_Hans: 使用 AES 对称加密算法，对Base64 编码的密文进行解密，并输出原文文本
   llm: AES Encrypt
 parameters:
   - name: ciphertext

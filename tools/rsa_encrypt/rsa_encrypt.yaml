@@ -2,11 +2,11 @@ identity:
   name: rsa_encrypt
   author: bowenliang123
   label:
-    en_US: RSA Encrypt
+    en_US: RSA Encryption
     zh_Hans: RSA 加密
 description:
   human:
-    en_US: RSA Encrypt
+    en_US: RSA Encryption
     zh_Hans: RSA 加密
   llm: RSA Encrypt
 parameters:

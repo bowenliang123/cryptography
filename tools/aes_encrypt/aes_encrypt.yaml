@@ -2,12 +2,12 @@ identity:
   name: aes_encrypt
   author: bowenliang123
   label:
-    en_US: AES Encrypt
+    en_US: AES Encryption
     zh_Hans: AES 加密
 description:
   human:
-    en_US: AES Encrypt
-    zh_Hans: AES 加密
+    en_US: Use AES symmetric encryption algorithm to encrypt input text, output as Base64-encoded ciphertext
+    zh_Hans: 使用 AES 对称加密算法，对输入文本进行加密，输出为 Base64 编码的密文
   llm: AES Encrypt
 parameters:
   - name: plaintext
