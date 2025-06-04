@@ -26,7 +26,7 @@ parameters:
     required: true
     label:
       en_US: Public Key Content
-      zh_Hans: 私钥内容
+      zh_Hans: 私钥文本
     human_description:
       en_US: "Starts with '-----BEGIN RSA PRIVATE KEY-----'"
       zh_Hans: "以 '-----BEGIN RSA PRIVATE KEY-----' 开头"

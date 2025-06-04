@@ -1,14 +1,14 @@
 identity:
-  name: rsa_encrypt
+  name: ed25519_signing
   author: bowenliang123
   label:
-    en_US: RSA Encrypt
-    zh_Hans: RSA 加密
+    en_US: Ed25519 Encrypt
+    zh_Hans: Ed25519 签名
 description:
   human:
-    en_US: RSA Encrypt
-    zh_Hans: RSA 加密
-  llm: RSA Encrypt
+    en_US: Ed25519 Encrypt
+    zh_Hans: Ed25519 签名
+  llm: Ed25519 Encrypt
 parameters:
   - name: plaintext
     type: string
@@ -21,17 +21,17 @@ parameters:
       zh_Hans: "原文"
     llm_description: "Plaintext"
     form: llm
-  - name: public_key_text
+  - name: private_key_text
     type: string
     required: true
     label:
-      en_US: Public Key Content
-      zh_Hans: 公钥文本
+      en_US: Private Key Content
+      zh_Hans: 私钥文本
     human_description:
-      en_US: "Starts with '-----BEGIN PUBLIC KEY-----'"
-      zh_Hans: "以 '-----BEGIN PUBLIC KEY-----' 开头"
+      en_US: "Starts with '-----BEGIN Ed25519 PUBLIC KEY-----'"
+      zh_Hans: "以 '-----BEGIN Ed25519 PUBLIC KEY-----' 开头"
     llm_description: "Public Key File"
     form: llm
 extra:
   python:
-    source: tools/rsa_encrypt/rsa_encrypt.py
+    source: tools/ed25519_signing/ed25519_signing.py

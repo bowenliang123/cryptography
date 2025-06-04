@@ -1,14 +1,14 @@
 identity:
-  name: rsa_encrypt
+  name: ed25519_signing
   author: bowenliang123
   label:
-    en_US: RSA Encrypt
-    zh_Hans: RSA 加密
+    en_US: Ed25519 Encrypt
+    zh_Hans: Ed25519 签名
 description:
   human:
-    en_US: RSA Encrypt
-    zh_Hans: RSA 加密
-  llm: RSA Encrypt
+    en_US: Ed25519 Encrypt
+    zh_Hans: Ed25519 签名
+  llm: Ed25519 Encrypt
 parameters:
   - name: plaintext
     type: string
@@ -34,4 +34,4 @@ parameters:
     form: llm
 extra:
   python:
-    source: tools/rsa_encrypt/rsa_encrypt.py
+    source: tools/ed25519_signing/ed25519_signing.py
