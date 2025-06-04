@@ -11,9 +11,13 @@ description:
   llm: Generate RSA Key Pair
 parameters:
   - name: key_size
-    type: number
+    type: select
     required: true
-    default: 2048
+    default: "2048"
+    options:
+      - value: "2048"
+      - value: "3072"
+      - value: "4096"
     label:
       en_US: Key Size
       zh_Hans: 秘钥长度
