@@ -3,11 +3,11 @@ identity:
   author: bowenliang123
   label:
     en_US: Ed25519 Signing
-    zh_Hans: Ed25519 签名
+    zh_Hans: Ed25519 签名生成
 description:
   human:
     en_US: Ed25519 Signing
-    zh_Hans: Ed25519 签名
+    zh_Hans: Ed25519 签名生成
   llm: Ed25519 Signing
 parameters:
   - name: plaintext

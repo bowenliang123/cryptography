@@ -13,15 +13,15 @@ class Ed25519VerificationTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         plaintext: str = tool_parameters.get("plaintext")
         if not plaintext or not isinstance(plaintext, str):
-            raise ValueError("Not a valid file for input input_file")
+            raise ValueError("Not an valid input for input plaintext")
 
         signature: str = tool_parameters.get("signature")
         if not signature or not isinstance(signature, str):
-            raise ValueError("Not a valid file for input signature")
+            raise ValueError("Not an valid input for input signature")
 
         public_key_text: str = tool_parameters.get("public_key_text")
         if not public_key_text and not "PUBLIC KEY" in public_key_text:
-            raise ValueError("Invalid RSA public key string, which should be starts with '-----BEGIN PUBLIC KEY-----'")
+            raise ValueError("Invalid Ed25519 public key string, which should be starts with '-----BEGIN PUBLIC KEY-----'")
 
         try:
             public_key: Ed25519PublicKey = serialization.load_pem_public_key(public_key_text.encode("utf-8"))

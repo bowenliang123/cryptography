@@ -1,14 +1,14 @@
 identity:
-  name: ed25519_signing
+  name: ed25519_verification
   author: bowenliang123
   label:
-    en_US: Ed25519 Encrypt
-    zh_Hans: Ed25519 签名
+    en_US: Ed25519 Verification
+    zh_Hans: Ed25519 签名验证
 description:
   human:
-    en_US: Ed25519 Encrypt
-    zh_Hans: Ed25519 签名
-  llm: Ed25519 Encrypt
+    en_US: Ed25519 Verification
+    zh_Hans: Ed25519 签名验证
+  llm: Ed25519 Verification
 parameters:
   - name: plaintext
     type: string
@@ -20,6 +20,17 @@ parameters:
       en_US: "Plaintext"
       zh_Hans: "原文"
     llm_description: "Plaintext"
+    form: llm
+  - name: signature
+    type: string
+    required: true
+    label:
+      en_US: Signature
+      zh_Hans: 签名
+    human_description:
+      en_US: "Signature"
+      zh_Hans: 签名
+    llm_description: "Signature"
     form: llm
   - name: public_key_text
     type: string
