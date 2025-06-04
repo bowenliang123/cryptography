@@ -10,8 +10,8 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 class RsaKeygenTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         key_size: int = int(tool_parameters.get("key_size", 2048))
-        if not key_size in [1024, 2048, 3072, 4096]:
-            raise ValueError("key_size must be one of [1024, 2048, 3072, 4096]")
+        if not key_size in [2048, 3072, 4096]:
+            raise ValueError("key_size must be one of [2048, 3072, 4096]")
 
         private_key_pem, public_key_pem = self.generate_rsa_key_pair(key_size)
 
