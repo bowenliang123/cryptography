@@ -14,6 +14,7 @@ tools:
   - tools/rsa_keygen/rsa_keygen.yaml
   - tools/rsa_encrypt/rsa_encrypt.yaml
   - tools/rsa_decrypt/rsa_decrypt.yaml
+  - tools/ed25519_keygen/ed25519_keygen.yaml
 extra:
   python:
     source: provider/cryptography.py

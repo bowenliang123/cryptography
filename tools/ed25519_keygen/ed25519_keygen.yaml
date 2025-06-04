@@ -1,0 +1,15 @@
+identity:
+  name: ed25519_keygen
+  author: bowenliang123
+  label:
+    en_US: Ed25519 Key Pair Generation
+    zh_Hans: Ed25519 密钥对生成
+description:
+  human:
+    en_US: Generate Ed25519 Key Pair
+    zh_Hans: 生成 Ed25519 密钥对
+  llm: Generate Ed25519 Key Pair
+parameters:
+extra:
+  python:
+    source: tools/ed25519_keygen/ed25519_keygen.py
