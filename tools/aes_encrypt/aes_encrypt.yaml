@@ -25,11 +25,11 @@ parameters:
     type: string
     required: true
     label:
-      en_US: Key
-      zh_Hans: 秘钥
+      en_US: Encryption Key
+      zh_Hans: 加密秘钥
     human_description:
-      en_US: Base64-encoded key text
-      zh_Hans: Base64 编码的密钥文本
+      en_US: Base64-encoded key text for encryption
+      zh_Hans: Base64 编码的加密密钥文本
     llm_description: "Key Text"
     form: llm
 extra:

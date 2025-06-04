@@ -25,8 +25,9 @@ class RsaDecryptTool(Tool):
             raise ValueError("Failed to load private key from PEM format") from e
 
         try:
-            decrypted_bytes = self.decrypt_data(private_key=private_key, ciphertext=base64.b64decode(ciphertext.encode("utf-8")))
-            result_base64_str=decrypted_bytes.decode("utf-8")
+            decrypted_bytes = self.decrypt_data(private_key=private_key,
+                                                ciphertext=base64.b64decode(ciphertext.encode("utf-8")))
+            result_base64_str = decrypted_bytes.decode("utf-8")
             yield self.create_text_message(result_base64_str)
         except ValueError as e:
             raise ValueError("Failed to decrypt data") from e

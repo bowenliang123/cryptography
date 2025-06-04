@@ -17,9 +17,9 @@ class AesEncryptTool(Tool):
             raise ValueError("Not a valid file for input input_file")
 
         key_text: str = tool_parameters.get("key_text")
-        if not key_text or not isinstance(plaintext, str):
+        if not key_text or not isinstance(key_text, str):
             raise ValueError("Encryption key is required")
-        key_bytes: bytes = base64.b64decode(plaintext.encode())
+        key_bytes: bytes = base64.b64decode(key_text.encode())
         if len(key_bytes) not in [128, 192, 256]:
             raise ValueError("Invalid decoded AES key length, which must be either 128, 192, or 256 bits")
 

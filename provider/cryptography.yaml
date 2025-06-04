@@ -18,6 +18,7 @@ tools:
   - tools/ed25519_sign/ed25519_sign.yaml
   - tools/ed25519_verify/ed25519_verify.yaml
   - tools/aes_encrypt/aes_encrypt.yaml
+  - tools/aes_decrypt/aes_decrypt.yaml
 extra:
   python:
     source: provider/cryptography.py
