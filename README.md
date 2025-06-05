@@ -72,7 +72,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 - Output:
     - plain text
 
-### Signing and Verfication
+### Signing and Verification
 
 ### Ed25519 KeyPair Generation
   - Tool: `ed25519_keygen` 
