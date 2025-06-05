@@ -12,6 +12,93 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 
 ## Tools and Usage
 
+
+<table>
+  <tr>
+  	 <th>Category</th>
+    <th>Algorithm</th>
+    <th>Tools & Features</th>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Hashing</td>
+    <td>SHA256</td>
+    <td>
+      <div>SHA256 File checksum</div>
+      <div>(sha256sum)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>MD5</td>
+    <td>
+      <div>MD5 File checksum</div>
+      <div>(md5sum)</div>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Symmetric Encryption</td>
+    <td rowspan="2">AES</td>
+    <td>
+      <div>AES Encryption</div>
+      <div>(aes_encrypt)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>AES Decryption</div>
+      <div>(aes_decrypt)</div>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">Asymmetric Encryption</td>
+    <td rowspan="3">RSA</td>
+    <td>
+      <div>RSA Keypair Generation</div>
+      <div>(aes_keygen)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>RSA Encryption</div>
+      <div>(aes_encrypt)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>RSA Decryption</div>
+      <div>(aes_decrypt)</div>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">Signing and Verification</td>
+    <td rowspan="3">
+      <div>Ed25519</div>
+      <div>(using EdDSA and Curve25519)</div>
+    </td>
+    <td>
+      <div>Ed25519 Keypair Generation</div>
+      <div>(ed25519_keygen)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>Ed25519 Encryption</div>
+      <div>(ed25519_encrypt)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>Ed25519 Decryption</div>
+      <div>(ed25519_decrypt)</div>
+    </td>
+  </tr>
+
+</table>
+
+
 ### Hashing
 
 #### File Hashing with SHA256
