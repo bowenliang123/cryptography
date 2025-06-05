@@ -1,31 +1,53 @@
-# Cryptography - Encryption, Decryption, Hashing for Files and Text
+# Cryptography - All-in-one Encryption, Decryption, Hashing and Signing
 
 **Author:** [bowenliang123](https://github.com/bowenliang123)
 
-**Github Repository:** https://github.com/bowenliang123/dify-plugin-crypto
+**Github Repository:** https://github.com/bowenliang123/cryptography
 
-**Dify Marketplace:** https://marketplace.dify.ai/plugins/bowenliang123/crypto
+**Dify Marketplace:** https://marketplace.dify.ai/plugins/bowenliang123/cryptography
 
 ## Description
 
-This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashing with [Cryptography](https://cryptography.io/) library.
+This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashing and Signing with [Cryptography](https://cryptography.io/en/stable/) library.
 
 ## Tools and Usage
 
-### File Hashing with SHA256
+### Hashing
+
+#### File Hashing with SHA256
   - Tool: `sha256sum`
   - Input: 
     - Binary file
   - Output: 
     - SHA256 hash of the input binary file
 
-### File Hashing with MD5
+#### File Hashing with MD5
   - Tool: `md5sum`
   - Input: 
     - Binary file
   - Output: MD5 hash of the input binary file
 
-### RSA KeyPair Generation
+### Symmetric Encryption and Decryption
+
+#### AES Encryption
+- Tool: `aes_encrypt`
+- Input:
+    - plain text
+    - encryption key text with Base 64 encoded
+- Output:
+  - text: encrypted ciphertext in Base64 format
+
+#### AES Decryption
+- Tool: `aes_decrypt`
+- Input:
+    - ciphertext: encrypted ciphertext with Base 64 encoded
+    - decryption key text with Base 64 encoded
+- Output:
+    - plain text
+
+### Asymmetric Encryption and Decryption
+
+#### RSA KeyPair Generation
   - Tool: `rsa_keygen` 
   - Input: 
     - Key size in bits, default: 2048, allowed values: 1024, 2048, 3072, 4096
@@ -34,7 +56,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
       - public key: `public_key.pem`
       - private key: `private_key.pem`
 
-### RSA Encryption
+#### RSA Encryption
 - Tool: `rsa_encrypt`
 - Input:
     - plain text
@@ -42,13 +64,15 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 - Output:
   - text: encrypted ciphertext in Base64 format
 
-### RSA Decryption
+#### RSA Decryption
 - Tool: `rsa_decrypt`
 - Input:
     - encrypted ciphertext in Base64 format
     - RSA private key text (eg. copied from `private_key.pem`)
 - Output:
     - plain text
+
+### Signing and Verfication
 
 ### Ed25519 KeyPair Generation
   - Tool: `ed25519_keygen` 
@@ -58,7 +82,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
       - public key: `public_key.pem`
       - private key: `private_key.pem`
 
-### Ed25519 Signing
+#### Ed25519 Signing
 - Tool: `ed25519_sign`
 - Input:
     - plain text
@@ -66,7 +90,7 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 - Output:
   - signature: Ed25519 signature text in Base64 format
 
-### Ed25519 Verification
+#### Ed25519 Verification
 - Tool: `ed25519_verify`
 - Input:
     - plain text
@@ -76,6 +100,9 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
     - `True` if the signature is valid, `False` otherwise
 
 ## Changelog
+
+- 0.2.0:
+  - Introduce `aes_encrypt` and `aes_decrypt` tools for AES encryption and decryption of Base64 format ciphertext 
 
 - 0.1.0:
   - Introduce tools to support Ed25519 signing, varification, keypair generation, including `ed25519_keygen`, `ed25519_sign` and `ed25519_verify`
