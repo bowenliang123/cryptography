@@ -56,19 +56,19 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
     <td rowspan="3">RSA</td>
     <td>
       <div>RSA Keypair Generation</div>
-      <div>(aes_keygen)</div>
+      <div>(rsa_keygen)</div>
     </td>
   </tr>
   <tr>
     <td>
       <div>RSA Encryption</div>
-      <div>(aes_encrypt)</div>
+      <div>(rsa_encrypt)</div>
     </td>
   </tr>
   <tr>
     <td>
       <div>RSA Decryption</div>
-      <div>(aes_decrypt)</div>
+      <div>(rsa_decrypt)</div>
     </td>
   </tr>
 
