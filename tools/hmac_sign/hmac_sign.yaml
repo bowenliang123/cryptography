@@ -16,7 +16,7 @@ parameters:
     options:
       - value: "HMAC-SHA256"
         label:
-          en_US: "HMAC-SHA1"
+          en_US: "HMAC-SHA256"
       - value: "HMAC-SHA1"
         label:
           en_US: "HMAC-SHA1"
