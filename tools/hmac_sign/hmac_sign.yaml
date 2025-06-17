@@ -63,11 +63,11 @@ parameters:
           en_US: "Base64 (Base64 encoded text)"
           zh_Hans: "Base64 (Base64 编码文本)"
     label:
-      en_US: Singing Algorithm
-      zh_Hans: 签名算法
+      en_US: Output format
+      zh_Hans: 输出格式
     human_description:
-      en_US: Supports HMAC-SHA1, HMAC-SHA256
-      zh_Hans: 支持 HMAC-SHA1, HMAC-SHA256
+      en_US: Supports Hex, Base64
+      zh_Hans: 支持 十六进制、Base64
     llm_description: Singing Key
     form: llm
 extra:
