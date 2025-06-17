@@ -40,7 +40,7 @@ class HmacSignTool(Tool):
         )
 
         result_str: str
-        match output_encoding:
+        match output_encoding.lower():
             case "base64":
                 result_str = base64.b64encode(hmac_result_bytes).decode("utf-8")
             case "hex":
