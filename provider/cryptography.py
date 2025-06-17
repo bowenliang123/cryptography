@@ -8,6 +8,7 @@ from tools.aes_encrypt.aes_encrypt import AesEncryptTool
 from tools.ed25519_keygen.ed25519_keygen import Ed25519KeygenTool
 from tools.ed25519_sign.ed25519_sign import Ed25519SigningTool
 from tools.ed25519_verify.ed25519_verify import Ed25519VerificationTool
+from tools.hmac_sign.hmac_sign import HmacSignTool
 from tools.md5sum.md5sum import Md5SumTool
 from tools.rsa_decrypt.rsa_decrypt import RsaDecryptTool
 from tools.rsa_encrypt.rsa_encrypt import RsaEncryptTool
@@ -21,8 +22,10 @@ class CryptoProvider(ToolProvider):
             """
             IMPLEMENT YOUR VALIDATION HERE
             """
+            # Signing
             Sha256SumTool.from_credentials({})
             Md5SumTool.from_credentials({})
+            HmacSignTool.from_credentials({})
 
             # Ed25519
             Ed25519KeygenTool.from_credentials({})

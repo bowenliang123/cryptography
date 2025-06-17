@@ -11,6 +11,7 @@ identity:
 tools:
   - tools/sha256sum/sha256sum.yaml
   - tools/md5sum/md5sum.yaml
+  - tools/hmac_sign/hmac_sign.yaml
   - tools/rsa_keygen/rsa_keygen.yaml
   - tools/rsa_encrypt/rsa_encrypt.yaml
   - tools/rsa_decrypt/rsa_decrypt.yaml
