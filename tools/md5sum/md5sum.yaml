@@ -2,8 +2,8 @@ identity:
   name: md5sum
   author: bowenliang123
   label:
-    en_US: md5sum File Hash
-    zh_Hans: md5sum 文件哈希
+    en_US: MD5 File Checksum (md5sum)
+    zh_Hans: MD5 文件哈希 (md5sum)
 description:
   human:
     en_US: Generate MD5 hash of file

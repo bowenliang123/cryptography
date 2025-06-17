@@ -2,8 +2,8 @@ identity:
   name: sha256sum
   author: bowenliang123
   label:
-    en_US: sha256sum File Hash
-    zh_Hans: sha256sum 文件哈希
+    en_US: SHA256 File Checksum (sha256sum)
+    zh_Hans: SHA256 文件哈希 (sha256sum)
 description:
   human:
     en_US: Generate SHA-256 hash of file
