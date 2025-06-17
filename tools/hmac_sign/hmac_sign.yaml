@@ -3,7 +3,7 @@ identity:
   author: bowenliang123
   label:
     en_US: HMAC Signature
-    zh_Hans: HMAC 签名
+    zh_Hans: HMAC 签名生成
 description:
   human:
     en_US: Generate signature with HMAC-SHA1, HMAC-SHA256 algorithms, supporting Hex or Base64 encoding for output
