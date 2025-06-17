@@ -113,6 +113,15 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
   - Input: 
     - Binary file
   - Output: MD5 hash of the input binary file
+ 
+#### Text Hashing with HMAC
+  - Tool: `hmac_sign`
+  - Input: 
+    - Plain text for signature
+    - Algorithm: `HMAC-SHA1`, `HMAC-SHA256`
+    - Key: Signature Key
+  - Output: 
+    - Signature Text: HMAC signature text in Hex or Base64 format
 
 ### Symmetric Encryption and Decryption
 
