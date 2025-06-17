@@ -67,7 +67,7 @@ parameters:
       zh_Hans: 输出格式
     human_description:
       en_US: Supports Hex, Base64
-      zh_Hans: 支持 十六进制、Base64
+      zh_Hans: 支持 Hex(十六进制)、Base64
     llm_description: Singing Key
     form: llm
 extra:
