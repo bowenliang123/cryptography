@@ -9,7 +9,7 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 
 
 class RsaDecryptTool(Tool):
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         ciphertext: str = tool_parameters.get("ciphertext")
         if not ciphertext or not isinstance(ciphertext, str):
             raise ValueError("Not a valid file for input input_file")

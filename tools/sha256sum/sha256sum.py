@@ -8,7 +8,7 @@ from dify_plugin.file.file import File
 
 
 class Sha256SumTool(Tool):
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         input_file: File = tool_parameters.get("input_file")
         if not input_file or not isinstance(input_file, File):
             raise ValueError("Not a valid file for input input_file")

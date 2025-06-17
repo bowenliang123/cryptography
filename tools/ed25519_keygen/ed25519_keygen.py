@@ -8,7 +8,7 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 
 
 class Ed25519KeygenTool(Tool):
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         private_key_pem, public_key_pem = self.generate_ed25519_key_pair()
 
         yield self.create_blob_message(

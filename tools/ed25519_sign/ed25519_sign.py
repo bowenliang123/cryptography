@@ -9,7 +9,7 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 
 
 class Ed25519SigningTool(Tool):
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         plaintext: str = tool_parameters.get("plaintext")
         if not plaintext or not isinstance(plaintext, str):
             raise ValueError("Not an valid input for plaintext")

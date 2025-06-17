@@ -8,7 +8,7 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 
 
 class RsaKeygenTool(Tool):
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         key_size: int = int(tool_parameters.get("key_size", 2048))
         if not key_size in [2048, 3072, 4096]:
             raise ValueError("key_size must be one of [2048, 3072, 4096]")
