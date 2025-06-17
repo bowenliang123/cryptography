@@ -188,6 +188,9 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 
 ## Changelog
 
+- 0.3.0:
+  - Introduce `hmac_sign` tools for HMAC signature generation, support HMAC-SHA1 and HMAC-SHA256 algorithms
+  
 - 0.2.0:
   - Introduce `aes_encrypt` and `aes_decrypt` tools for AES encryption and decryption of Base64 format ciphertext 
 
