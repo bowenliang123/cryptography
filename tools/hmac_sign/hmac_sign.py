@@ -1,4 +1,5 @@
 import base64
+import logging
 from collections.abc import Generator
 from typing import Any
 
@@ -33,22 +34,25 @@ class HmacSignTool(Tool):
                 raise ValueError(f"Unsupported algorithm: {algorithm}, only"
                                  f" {HmacAlgorithm.HMAC_SHA1}, {HmacAlgorithm.HMAC_SHA256} are supported")
 
-        hmac_result_bytes = self.generate_hmac(
-            key=key.encode("utf-8"),
-            message=plaintext.encode("utf-8"),
-            hash_algorithm=hash_algorithm_instance,
-        )
+        try:
+            hmac_result_bytes = self.generate_hmac(
+                key=key.encode("utf-8"),
+                message=plaintext.encode("utf-8"),
+                hash_algorithm=hash_algorithm_instance,
+            )
 
-        result_str: str
-        match output_encoding.lower():
-            case "base64":
-                result_str = base64.b64encode(hmac_result_bytes).decode("utf-8")
-            case "hex":
-                result_str = hmac_result_bytes.hex()
-            case _:
-                result_str = ""
+            result_str: str
+            match output_encoding.lower():
+                case "base64":
+                    result_str = base64.b64encode(hmac_result_bytes).decode("utf-8")
+                case "hex":
+                    result_str = hmac_result_bytes.hex()
+                case _:
+                    result_str = ""
 
-        self.create_text_message(result_str)
+            yield self.create_text_message(result_str)
+        except:
+            logging.exception("Failed to generate HMAC signature")
 
     def generate_hmac(self, key: bytes, message: bytes, hash_algorithm: HashAlgorithm) -> bytes:
         h = HMAC(key, hash_algorithm)
