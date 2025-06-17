@@ -24,8 +24,8 @@ parameters:
       en_US: Singing Algorithm
       zh_Hans: 签名算法
     human_description:
-      en_US: Supports HMAC-SHA1, HMAC-SHA256
-      zh_Hans: 支持 HMAC-SHA1, HMAC-SHA256
+      en_US: Default to HMAC-SHA256. Supports HMAC-SHA1 or HMAC-SHA256.
+      zh_Hans: 默认为HMAC-SHA256。支持 HMAC-SHA1, HMAC-SHA256。
     llm_description: Singing Key
     form: llm
   - name: plaintext
@@ -66,8 +66,8 @@ parameters:
       en_US: Output format
       zh_Hans: 输出格式
     human_description:
-      en_US: Supports Hex, Base64
-      zh_Hans: 支持 Hex(十六进制)、Base64
+      en_US: Default to Hex. Supports Hex or Base64.
+      zh_Hans: 默认为Hex。支持 Hex(十六进制)、Base64。
     llm_description: Singing Key
     form: llm
 extra:
