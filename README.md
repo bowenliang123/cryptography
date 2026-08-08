@@ -197,6 +197,10 @@ This Dify plugin `cryptography` provides tools for Encryption, Decryption, Hashi
 
 ## Changelog
 
+- 0.4.0:
+  - Upgrade dify-plugin SDK to 0.10.1
+  - Upgrade cryptography to 50.0.0
+
 - 0.3.0:
   - Introduce `hmac_sign` tools for HMAC signature generation, support HMAC-SHA1 and HMAC-SHA256 algorithms
   
