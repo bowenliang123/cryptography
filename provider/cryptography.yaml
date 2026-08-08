@@ -5,8 +5,8 @@ identity:
     en_US: Cryptography
     zh_Hans: Cryptography 加密/解密/哈希
   description:
-  en_US: Encryption, decryption, hashing and keypair generation, with AES, RSA, SHA256, MD5, HMAC, Ed25519 etc.
-  zh_Hans: 加密, 解密, 哈希, 密钥生成，支持AES, RSA, SHA256, MD5, HMAC, Ed25519等算法
+    en_US: Encryption, decryption, hashing and keypair generation, with AES, RSA, SHA256, MD5, HMAC, Ed25519 etc.
+    zh_Hans: 加密, 解密, 哈希, 密钥生成，支持AES, RSA, SHA256, MD5, HMAC, Ed25519等算法
   icon: icon.svg
 tools:
   - tools/sha256sum/sha256sum.yaml
