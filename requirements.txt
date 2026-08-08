@@ -1,2 +1,2 @@
 dify-plugin~=0.10.1
-cryptography~=45.0.4
+cryptography~=50.0.0
